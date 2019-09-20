@@ -29,6 +29,7 @@ function DetectedKeypress(ENTER) {
     }
 }
 
+
 function GeneralGestion() {
     CreatedTextNodeli();
     CreatedElementLI();
