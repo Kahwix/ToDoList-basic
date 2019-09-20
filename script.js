@@ -1,35 +1,41 @@
 const button = document.getElementById('enter');
 const input = document.getElementById('userinput');
-const ul = document.getElementsByTagName('ul');
-let returning = document.createTextNode(input.value);
+const ul = document.querySelector('ul');
+let li;
 
 
-function inputLength () {
-    return input.value.length;
+function CreatedTextNodeli() {
+    li = document.createElement('li');
+}
+
+function CreatedElementLI() {
+    li.append(document.createTextNode(input.value));
+}
+
+function InsertLiinUl() {
+    ul.insertAdjacentElement('beforeend', li);
 }
 
 
-    function CreatedElementPlayer () {
-        const li = document.createElement('li');
-        li.appendChild(returning);
-        ul.appendChild(li);
-	    input.value = "";
+function DetectedMouse() {
+    if ( input.value.length > 0 ){
+        GeneralGestion();
     }
+}
 
-
-    function DetectedMouse () {
-        if ( inputLenght > 0 ){
-            CreatedElementPlayer();
-        }
+function DetectedKeypress(ENTER) {
+    if ( input.value.length > 0 && (ENTER.keyCode === 13) ) {
+        GeneralGestion();
     }
+}
+
+function GeneralGestion() {
+    CreatedTextNodeli();
+    CreatedElementLI();
+    InsertLiinUl();
+    input.value = "";
+}
 
 
-    function DetectedKeypress (ENTER) {
-        if ( inputLength > 0 && ENTER.keyCode || ENTER.which === 13 ) {
-            CreatedElementPlayer();
-        }
-    }
-
-
-    button.addEventListener("click", DetectedMouse);
-    input.addEventListener("keypress", DetectedKeypress);
+button.addEventListener("click", DetectedMouse);
+input.addEventListener("keypress", DetectedKeypress);
