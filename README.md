@@ -1,3 +1,3 @@
-#READ ME
+# READ ME
 
-* Project to program a ToDoList Modern with personnel model !
+**Project to program a ToDoList Modern with personnel model !**
