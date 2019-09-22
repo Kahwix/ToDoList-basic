@@ -1,0 +1,13 @@
+html {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+}
+
+main {
+    background-color: rgba(120, 25, 120, 20%);
+    width: 40%;
+    text-align: center;
+}
+
+
+
