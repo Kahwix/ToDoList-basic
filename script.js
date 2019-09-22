@@ -39,6 +39,22 @@ function GeneralGestion() {
     input.value = "";
 }
 
+/*
+function deleteLi() {
+    let rm = document.getElementsByClassName("removebutton");
+let li;
+for ( let i = 0; i < rm.length; i++) {
+    del[i].onclick = function () {
+        li = this.parentElement;
+        li.remove();
+    }
+}
+}
+*/
+
+/* function LocalStorageTextNodes (save) {
+    localStorage.setItem('save', CreatedTextNodeli());
+}
 
 button.addEventListener("click", DetectedMouse);
 input.addEventListener("keypress", DetectedKeypress);
