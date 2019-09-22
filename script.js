@@ -50,11 +50,12 @@ for ( let i = 0; i < rm.length; i++) {
     }
 }
 }
-*/
 
-/* function LocalStorageTextNodes (save) {
+
+function LocalStorageTextNodes (save) {
     localStorage.setItem('save', CreatedTextNodeli());
 }
+*/
 
 button.addEventListener("click", DetectedMouse);
 input.addEventListener("keypress", DetectedKeypress);
